@@ -84,7 +84,7 @@ export default{
 				this.showArea = false
 				document.documentElement.style.overflow = 'scroll'
 			}
-		} 
+		}
 	},
 	computed: mapGetters([
 	  'cityName'

@@ -13,6 +13,7 @@ import MovieDetail from './views/MovieDetail'
 import Cinema from './views/Cinema'
 import CinemaDetail from './views/CinemaDetail'
 import Me from './views/Me'
+import Him from './views/Him'
 import NoData from './views/NoData'
 import App from './App'
 import NotFound from './components/404'
@@ -43,6 +44,9 @@ const routes = [{
 },{
   path : '/me',
   component : Me
+}, {
+  path : '/him',
+  component : Him
 },{
   path : '/no',
   component : NoData

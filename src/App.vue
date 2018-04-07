@@ -29,7 +29,7 @@ export default {
   methods: {
     routeChange () {
       let path = this.$route.path
-      if (path === '/' || path === '/cinema' || path === '/me') {
+      if (path === '/' || path === '/cinema' || path === '/me'||path === '/him') {
         this.showNav = true
       } else {
         this.showNav = false

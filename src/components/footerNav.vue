@@ -25,6 +25,15 @@
 	  			</div>
 	  		</router-link>
 	  	</nav>
+
+	  	<nav class="nav nav-him" :class="{'cur-page': route === '/him'}">
+        	  		<router-link to="him">
+        	  			<div class="nav-icon">
+        	  				<img v-show="route !== '/him'" src="../assets/images/eno.svg" alt="">
+        	  				<img v-show="route === '/him'" src="../assets/images/eok.svg" alt="">
+        	  			</div>
+        	  		</router-link>
+        </nav>
   	</section>
   	<section v-show="!showNav" @click="goBack" style="width: 100%">
   		<p class="back"> < </p>
@@ -83,7 +92,7 @@ export default{
 }
 .nav-movie::after,
 .nav-cinama::after,
-.nav-me::after {
+.nav-me,.nav-him::after {
 	padding-top: 2px;
 	text-align: center;
 	width: 30px;
@@ -98,6 +107,9 @@ export default{
 }
 .nav-me::after {
 	content: "我的";
+}
+.nav-him::after {
+	content: "他的";
 }
 .go-back {
 	background: #ff2c43;
